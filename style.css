@@ -1,0 +1,222 @@
+.hidder
+{
+    opacity: 0; 
+    visibility: hidden;
+}
+.shower
+{
+    opacity: 1;
+    visibility: visible;
+}
+.content
+{
+    z-index:10;
+    width: fit-content;
+    font-family: 'Brush Script MT', cursive;
+    font-size:50px;
+}
+.leader
+{
+    text-align: center;
+}
+.boxes
+{
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    margin:3px;
+    width: 80px;
+
+}
+.justify-content-md-center
+{
+    width: fit-content;
+    background-color: brown;
+}
+.time 
+{
+    width:fit-content;
+    font-size: 30px;
+    height: fit-content;
+    background-color: brown;
+    
+}
+.number
+{
+    background-color: lightgreen;
+    
+}
+.positioner
+{
+    position: absolute;
+    left:30%;
+    top:35vh;
+}
+.cell
+{
+    border:1px solid black;
+}
+.popup
+{
+    position: absolute;
+    top:-10vh;
+    width: 100%;
+    height:110vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+.img
+{
+    position: relative;
+    left:39.5%;
+
+}
+.content img
+{
+    position:relative;
+    right:21.5%;
+    bottom: 2.7%;
+}
+@media only screen and (max-width:540px){
+    .boxes
+    {
+        height: 35px;
+        width: 35px;
+        margin: 2px;
+        border-radius: 5px;
+        text-align: right;
+    }
+    .positioner
+    {
+    position: absolute;
+    left:10%;
+    top:15vh;
+    max-width: 80%;
+    }
+    .content
+    {
+        font-size: 24px;
+        position: relative;
+        top: 2vh;
+        right: 5%;
+    }
+    .time
+    {
+        font-size:18px;
+    }
+    .so
+    {
+        width: fit-content;
+    }
+    .most{
+        width: fit-content;
+    }
+    .cell
+    {
+        font-size: 10px;
+    }
+    .rank
+    {
+        width: 50px;
+    }
+    .img
+    {
+        position:relative;
+        left:15%;
+        top:5vh;
+        width:60%;
+        height: 30vh;
+    }
+    .content img
+    {
+        height: 36px;
+        width: 36px;
+        position: relative;
+        right: 110%;
+        bottom: 0.45vh;
+    }
+}
+@media only screen and (width:768px)
+{
+    .boxes
+    {
+        height: 50px;
+        width: 50px;
+        margin: 3px;
+        border-radius: 8px;
+        text-align: right;
+    }
+    .content
+    {
+        font-size: 33px;
+        position: relative;
+        top: 2vh;
+        right: 18%;
+    }
+    .time
+    {
+        font-size:25px;
+    }
+    .so
+    {
+        width: fit-content;
+    }
+    .most{
+        width: fit-content;
+    }
+    .positioner
+    {
+    position: absolute;
+    left:10%;
+    top:25vh;
+    max-width: 80%;
+    }
+    .content img
+    {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        right:45.5%;
+        bottom:0.25vh;
+        
+    }
+    
+    .img
+    {
+        position: relative;
+        left:15%;
+        top:10vh;
+    }
+}
+@media only screen and (width:1024px)
+{
+    .content
+    {
+        position: relative;
+        top: 2vh;
+        right: 18%;
+    }
+    .positioner
+    {
+        position: absolute;
+        left:10%;
+        top:25vh;
+        max-width: 80%;
+    }
+    .img
+    {
+        position: relative;
+        left:16%;
+        top:5vh;
+    }
+}
+@keyframes
+animator
+{
+    0%{transform: scale(0.25,0.25);}
+    25%{transform: scale(0.75,0.75);}
+    50%{transform: scale(0.01,0.01);}
+    75%{transform:scale(0.5,0.5);}
+    100%
+    {transform: scale(1,1);}
+}
